@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B611369920A093EF0091A237 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B611369820A093EF0091A237 /* AppDelegate.m */; };
+		B611369F20A093EF0091A237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B611369D20A093EF0091A237 /* Main.storyboard */; };
+		B61136A120A093F10091A237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61136A020A093F10091A237 /* Assets.xcassets */; };
+		B61136A420A093F10091A237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61136A220A093F10091A237 /* LaunchScreen.storyboard */; };
+		B61136A720A093F10091A237 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136A620A093F10091A237 /* main.m */; };
+		B61136AF20A094170091A237 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136AE20A094170091A237 /* MainTableViewController.m */; };
+		B61136B220A09BA10091A237 /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136B120A09BA10091A237 /* TriangleViewController.m */; };
+		B61136B520A0A00C0091A237 /* ModelRenderingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136B420A0A00C0091A237 /* ModelRenderingViewController.m */; };
+		B61136B820A0A0300091A237 /* GaussBlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136B720A0A0300091A237 /* GaussBlurViewController.m */; };
+		B61136BD20A0A1820091A237 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61136BB20A0A1820091A237 /* Metal.framework */; };
+		B61136BE20A0A1820091A237 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61136BC20A0A1820091A237 /* MetalKit.framework */; };
+		B61136C020A0A18F0091A237 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61136BF20A0A18F0091A237 /* QuartzCore.framework */; };
+		B61136C320A0A6990091A237 /* HelloTriangle.metal in Sources */ = {isa = PBXBuildFile; fileRef = B61136C220A0A6990091A237 /* HelloTriangle.metal */; };
+		B61136DD20A499440091A237 /* ModelRendering.metal in Sources */ = {isa = PBXBuildFile; fileRef = B61136DC20A499440091A237 /* ModelRendering.metal */; };
+		B61136F720A68D160091A237 /* Old Farmhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = B61136F520A68D160091A237 /* Old Farmhouse.png */; };
+		B61136F820A68D160091A237 /* Old Farmhouse.obj in Resources */ = {isa = PBXBuildFile; fileRef = B61136F620A68D160091A237 /* Old Farmhouse.obj */; };
+		B61136FC20A6ABE40091A237 /* MathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136FB20A6ABE40091A237 /* MathUtils.m */; };
+		B6541C7C20A8136F00D7326A /* AllenIverson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6541C7B20A8136F00D7326A /* AllenIverson.jpg */; };
+		B6541C7F20A8230200D7326A /* UIImage+TextureUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6541C7E20A8230200D7326A /* UIImage+TextureUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B611369420A093EF0091A237 /* MetalDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B611369720A093EF0091A237 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B611369820A093EF0091A237 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B611369E20A093EF0091A237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B61136A020A093F10091A237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B61136A320A093F10091A237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B61136A520A093F10091A237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61136A620A093F10091A237 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B61136AD20A094170091A237 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		B61136AE20A094170091A237 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		B61136B020A09BA10091A237 /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
+		B61136B120A09BA10091A237 /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
+		B61136B320A0A00C0091A237 /* ModelRenderingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelRenderingViewController.h; sourceTree = "<group>"; };
+		B61136B420A0A00C0091A237 /* ModelRenderingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelRenderingViewController.m; sourceTree = "<group>"; };
+		B61136B620A0A0300091A237 /* GaussBlurViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaussBlurViewController.h; sourceTree = "<group>"; };
+		B61136B720A0A0300091A237 /* GaussBlurViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaussBlurViewController.m; sourceTree = "<group>"; };
+		B61136BB20A0A1820091A237 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		B61136BC20A0A1820091A237 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		B61136BF20A0A18F0091A237 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B61136C220A0A6990091A237 /* HelloTriangle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HelloTriangle.metal; sourceTree = "<group>"; };
+		B61136DC20A499440091A237 /* ModelRendering.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ModelRendering.metal; sourceTree = "<group>"; };
+		B61136F520A68D160091A237 /* Old Farmhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old Farmhouse.png"; sourceTree = "<group>"; };
+		B61136F620A68D160091A237 /* Old Farmhouse.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Old Farmhouse.obj"; sourceTree = "<group>"; };
+		B61136FA20A6ABE40091A237 /* MathUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathUtils.h; sourceTree = "<group>"; };
+		B61136FB20A6ABE40091A237 /* MathUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathUtils.m; sourceTree = "<group>"; };
+		B6541C7B20A8136F00D7326A /* AllenIverson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AllenIverson.jpg; sourceTree = "<group>"; };
+		B6541C7D20A8230200D7326A /* UIImage+TextureUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TextureUtils.h"; sourceTree = "<group>"; };
+		B6541C7E20A8230200D7326A /* UIImage+TextureUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TextureUtils.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B611369120A093EF0091A237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61136C020A0A18F0091A237 /* QuartzCore.framework in Frameworks */,
+				B61136BD20A0A1820091A237 /* Metal.framework in Frameworks */,
+				B61136BE20A0A1820091A237 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B611368B20A093EF0091A237 = {
+			isa = PBXGroup;
+			children = (
+				B611369620A093EF0091A237 /* MetalDemo1 */,
+				B611369520A093EF0091A237 /* Products */,
+				B61136BA20A0A1810091A237 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B611369520A093EF0091A237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B611369420A093EF0091A237 /* MetalDemo1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B611369620A093EF0091A237 /* MetalDemo1 */ = {
+			isa = PBXGroup;
+			children = (
+				B611369720A093EF0091A237 /* AppDelegate.h */,
+				B611369820A093EF0091A237 /* AppDelegate.m */,
+				B61136F920A6ABB20091A237 /* Utils */,
+				B61136C420A487A60091A237 /* Resource */,
+				B61136C120A0A6870091A237 /* Shaders */,
+				B61136B920A0A0E20091A237 /* ViewControllers */,
+				B611369D20A093EF0091A237 /* Main.storyboard */,
+				B61136A020A093F10091A237 /* Assets.xcassets */,
+				B61136A220A093F10091A237 /* LaunchScreen.storyboard */,
+				B61136A520A093F10091A237 /* Info.plist */,
+				B61136A620A093F10091A237 /* main.m */,
+			);
+			path = MetalDemo1;
+			sourceTree = "<group>";
+		};
+		B61136B920A0A0E20091A237 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B61136AD20A094170091A237 /* MainTableViewController.h */,
+				B61136AE20A094170091A237 /* MainTableViewController.m */,
+				B61136B020A09BA10091A237 /* TriangleViewController.h */,
+				B61136B120A09BA10091A237 /* TriangleViewController.m */,
+				B61136B320A0A00C0091A237 /* ModelRenderingViewController.h */,
+				B61136B420A0A00C0091A237 /* ModelRenderingViewController.m */,
+				B61136B620A0A0300091A237 /* GaussBlurViewController.h */,
+				B61136B720A0A0300091A237 /* GaussBlurViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B61136BA20A0A1810091A237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B61136BF20A0A18F0091A237 /* QuartzCore.framework */,
+				B61136BB20A0A1820091A237 /* Metal.framework */,
+				B61136BC20A0A1820091A237 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B61136C120A0A6870091A237 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B61136C220A0A6990091A237 /* HelloTriangle.metal */,
+				B61136DC20A499440091A237 /* ModelRendering.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		B61136C420A487A60091A237 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B61136F620A68D160091A237 /* Old Farmhouse.obj */,
+				B61136F520A68D160091A237 /* Old Farmhouse.png */,
+				B6541C7B20A8136F00D7326A /* AllenIverson.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B61136F920A6ABB20091A237 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B61136FA20A6ABE40091A237 /* MathUtils.h */,
+				B61136FB20A6ABE40091A237 /* MathUtils.m */,
+				B6541C7D20A8230200D7326A /* UIImage+TextureUtils.h */,
+				B6541C7E20A8230200D7326A /* UIImage+TextureUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B611369320A093EF0091A237 /* MetalDemo1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61136AA20A093F10091A237 /* Build configuration list for PBXNativeTarget "MetalDemo1" */;
+			buildPhases = (
+				B611369020A093EF0091A237 /* Sources */,
+				B611369120A093EF0091A237 /* Frameworks */,
+				B611369220A093EF0091A237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalDemo1;
+			productName = MetalDemo1;
+			productReference = B611369420A093EF0091A237 /* MetalDemo1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B611368C20A093EF0091A237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = v.q;
+				TargetAttributes = {
+					B611369320A093EF0091A237 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = B611368F20A093EF0091A237 /* Build configuration list for PBXProject "MetalDemo1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B611368B20A093EF0091A237;
+			productRefGroup = B611369520A093EF0091A237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B611369320A093EF0091A237 /* MetalDemo1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B611369220A093EF0091A237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61136A420A093F10091A237 /* LaunchScreen.storyboard in Resources */,
+				B6541C7C20A8136F00D7326A /* AllenIverson.jpg in Resources */,
+				B61136F720A68D160091A237 /* Old Farmhouse.png in Resources */,
+				B61136A120A093F10091A237 /* Assets.xcassets in Resources */,
+				B61136F820A68D160091A237 /* Old Farmhouse.obj in Resources */,
+				B611369F20A093EF0091A237 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B611369020A093EF0091A237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61136B220A09BA10091A237 /* TriangleViewController.m in Sources */,
+				B6541C7F20A8230200D7326A /* UIImage+TextureUtils.m in Sources */,
+				B61136B520A0A00C0091A237 /* ModelRenderingViewController.m in Sources */,
+				B61136A720A093F10091A237 /* main.m in Sources */,
+				B61136C320A0A6990091A237 /* HelloTriangle.metal in Sources */,
+				B61136DD20A499440091A237 /* ModelRendering.metal in Sources */,
+				B611369920A093EF0091A237 /* AppDelegate.m in Sources */,
+				B61136AF20A094170091A237 /* MainTableViewController.m in Sources */,
+				B61136B820A0A0300091A237 /* GaussBlurViewController.m in Sources */,
+				B61136FC20A6ABE40091A237 /* MathUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B611369D20A093EF0091A237 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B611369E20A093EF0091A237 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B61136A220A093F10091A237 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B61136A320A093F10091A237 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B61136A820A093F10091A237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B61136A920A093F10091A237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B61136AB20A093F10091A237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZ2L42YQ8T;
+				INFOPLIST_FILE = MetalDemo1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vq.MetalDemo1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B61136AC20A093F10091A237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZ2L42YQ8T;
+				INFOPLIST_FILE = MetalDemo1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vq.MetalDemo1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B611368F20A093EF0091A237 /* Build configuration list for PBXProject "MetalDemo1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61136A820A093F10091A237 /* Debug */,
+				B61136A920A093F10091A237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61136AA20A093F10091A237 /* Build configuration list for PBXNativeTarget "MetalDemo1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61136AB20A093F10091A237 /* Debug */,
+				B61136AC20A093F10091A237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B611368C20A093EF0091A237 /* Project object */;
+}
