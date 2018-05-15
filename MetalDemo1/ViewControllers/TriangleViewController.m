@@ -57,6 +57,8 @@ static const Vertex vertices[] = {
 - (void)makeDevice {
     self.device = MTLCreateSystemDefaultDevice();
     
+    self.commandQueue = [self.device newCommandQueue];
+    
     self.metalLayer = [CAMetalLayer layer];
     self.metalLayer.pixelFormat = MTLPixelFormatBGRA8Unorm;
     self.metalLayer.framebufferOnly = YES;
@@ -89,8 +91,6 @@ static const Vertex vertices[] = {
         NSLog(@"Error: create render pipeline state failed, %@", error);
         abort();
     }
-    
-    self.commandQueue = [self.device newCommandQueue];
 }
 
 - (void)makeBuffers {

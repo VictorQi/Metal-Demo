@@ -21,11 +21,12 @@
 		B61136C020A0A18F0091A237 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61136BF20A0A18F0091A237 /* QuartzCore.framework */; };
 		B61136C320A0A6990091A237 /* HelloTriangle.metal in Sources */ = {isa = PBXBuildFile; fileRef = B61136C220A0A6990091A237 /* HelloTriangle.metal */; };
 		B61136DD20A499440091A237 /* ModelRendering.metal in Sources */ = {isa = PBXBuildFile; fileRef = B61136DC20A499440091A237 /* ModelRendering.metal */; };
-		B61136F720A68D160091A237 /* Old Farmhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = B61136F520A68D160091A237 /* Old Farmhouse.png */; };
-		B61136F820A68D160091A237 /* Old Farmhouse.obj in Resources */ = {isa = PBXBuildFile; fileRef = B61136F620A68D160091A237 /* Old Farmhouse.obj */; };
 		B61136FC20A6ABE40091A237 /* MathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136FB20A6ABE40091A237 /* MathUtils.m */; };
 		B6541C7C20A8136F00D7326A /* AllenIverson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6541C7B20A8136F00D7326A /* AllenIverson.jpg */; };
 		B6541C7F20A8230200D7326A /* UIImage+TextureUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6541C7E20A8230200D7326A /* UIImage+TextureUtils.m */; };
+		B696007920AB300800B267F0 /* Farmhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = B696007720AB300800B267F0 /* Farmhouse.png */; };
+		B696007A20AB300800B267F0 /* Farmhouse.obj in Resources */ = {isa = PBXBuildFile; fileRef = B696007820AB300800B267F0 /* Farmhouse.obj */; };
+		B696007C20AB48AE00B267F0 /* GaussianShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = B696007B20AB48AE00B267F0 /* GaussianShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,13 +51,14 @@
 		B61136BF20A0A18F0091A237 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B61136C220A0A6990091A237 /* HelloTriangle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HelloTriangle.metal; sourceTree = "<group>"; };
 		B61136DC20A499440091A237 /* ModelRendering.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ModelRendering.metal; sourceTree = "<group>"; };
-		B61136F520A68D160091A237 /* Old Farmhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old Farmhouse.png"; sourceTree = "<group>"; };
-		B61136F620A68D160091A237 /* Old Farmhouse.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Old Farmhouse.obj"; sourceTree = "<group>"; };
 		B61136FA20A6ABE40091A237 /* MathUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathUtils.h; sourceTree = "<group>"; };
 		B61136FB20A6ABE40091A237 /* MathUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathUtils.m; sourceTree = "<group>"; };
 		B6541C7B20A8136F00D7326A /* AllenIverson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AllenIverson.jpg; sourceTree = "<group>"; };
 		B6541C7D20A8230200D7326A /* UIImage+TextureUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TextureUtils.h"; sourceTree = "<group>"; };
 		B6541C7E20A8230200D7326A /* UIImage+TextureUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TextureUtils.m"; sourceTree = "<group>"; };
+		B696007720AB300800B267F0 /* Farmhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Farmhouse.png; sourceTree = "<group>"; };
+		B696007820AB300800B267F0 /* Farmhouse.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Farmhouse.obj; sourceTree = "<group>"; };
+		B696007B20AB48AE00B267F0 /* GaussianShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GaussianShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				B61136C220A0A6990091A237 /* HelloTriangle.metal */,
 				B61136DC20A499440091A237 /* ModelRendering.metal */,
+				B696007B20AB48AE00B267F0 /* GaussianShader.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -145,9 +148,9 @@
 		B61136C420A487A60091A237 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B61136F620A68D160091A237 /* Old Farmhouse.obj */,
-				B61136F520A68D160091A237 /* Old Farmhouse.png */,
 				B6541C7B20A8136F00D7326A /* AllenIverson.jpg */,
+				B696007820AB300800B267F0 /* Farmhouse.obj */,
+				B696007720AB300800B267F0 /* Farmhouse.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -222,9 +225,9 @@
 			files = (
 				B61136A420A093F10091A237 /* LaunchScreen.storyboard in Resources */,
 				B6541C7C20A8136F00D7326A /* AllenIverson.jpg in Resources */,
-				B61136F720A68D160091A237 /* Old Farmhouse.png in Resources */,
+				B696007920AB300800B267F0 /* Farmhouse.png in Resources */,
 				B61136A120A093F10091A237 /* Assets.xcassets in Resources */,
-				B61136F820A68D160091A237 /* Old Farmhouse.obj in Resources */,
+				B696007A20AB300800B267F0 /* Farmhouse.obj in Resources */,
 				B611369F20A093EF0091A237 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +246,7 @@
 				B61136C320A0A6990091A237 /* HelloTriangle.metal in Sources */,
 				B61136DD20A499440091A237 /* ModelRendering.metal in Sources */,
 				B611369920A093EF0091A237 /* AppDelegate.m in Sources */,
+				B696007C20AB48AE00B267F0 /* GaussianShader.metal in Sources */,
 				B61136AF20A094170091A237 /* MainTableViewController.m in Sources */,
 				B61136B820A0A0300091A237 /* GaussBlurViewController.m in Sources */,
 				B61136FC20A6ABE40091A237 /* MathUtils.m in Sources */,

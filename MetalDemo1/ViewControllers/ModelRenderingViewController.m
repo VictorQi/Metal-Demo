@@ -119,7 +119,7 @@
 };
 
 - (void)loadAsset {
-    MDLVertexDescriptor *mdlVertexDesc =  MTKModelIOVertexDescriptorFromMetal(self.vertexDescriptor);
+    MDLVertexDescriptor *mdlVertexDesc = MTKModelIOVertexDescriptorFromMetal(self.vertexDescriptor);
     
     MDLVertexAttribute *attribute = mdlVertexDesc.attributes[0];
     attribute.name = MDLVertexAttributePosition;
@@ -132,14 +132,14 @@
     
     MTKMeshBufferAllocator *mtkBufferAllocator = [[MTKMeshBufferAllocator alloc] initWithDevice:self.deviece];
     
-    NSURL *houseFileURL = [NSBundle.mainBundle URLForResource:@"Old Farmhouse" withExtension:@"obj"];
+    NSURL *houseFileURL = [NSBundle.mainBundle URLForResource:@"Farmhouse" withExtension:@"obj"];
     
     MDLAsset *asset = [[MDLAsset alloc] initWithURL:houseFileURL vertexDescriptor:mdlVertexDesc bufferAllocator:mtkBufferAllocator];
     
     NSError *error = nil;
     
     MTKTextureLoader *loader = [[MTKTextureLoader alloc] initWithDevice:self.deviece];
-    NSURL *textureURL = [NSBundle.mainBundle URLForResource:@"Old Farmhouse" withExtension:@"png"];
+    NSURL *textureURL = [NSBundle.mainBundle URLForResource:@"Farmhouse" withExtension:@"png"];
     self.texture = [loader newTextureWithContentsOfURL:textureURL options:nil error:&error];
     
     if (error) {
